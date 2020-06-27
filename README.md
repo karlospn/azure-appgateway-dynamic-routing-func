@@ -2,9 +2,9 @@
 These repo contains an Azure ARM custom provider that allows to add new path rules and listeners to an existing Azure application  gateway.
 The custom provider is an Azure Powershell Function.
 
-# How to use
+# How to use it
 
-Add these resource inside your ARM template
+Add that resource inside your ARM template
 
 ```javascript
 
@@ -45,11 +45,11 @@ Add these resource inside your ARM template
 
 ```
 
-These custom providers need the following properties:
+The custom provider needs the following properties:
 
-- gatewayName : application gateway name
+- gatewayName : the name of your existing application gateway
 - resGroup: resource group where the app gateway is deployed
 - appName : application name
 - protocol : listener protocol
-- appServiceHostName: for rewriting host name
-- pathRulePath : path route in app gateway
+- appServiceHostName: it will use that parameter for rewriting the host name
+- pathRulePath : pathroute in the app gateway
